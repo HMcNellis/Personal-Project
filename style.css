@@ -1,0 +1,22 @@
+h1{
+	text-align: center;
+}
+.board{
+	width: 416px;
+	height: 400px;
+	margin: 0 auto;
+	display: block;
+	transform: perspective( 600px ) rotateX( 45deg )
+}
+.board__column{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #000;
+	float: left;
+}
+.board__row:nth-of-type(odd) .board__column:nth-of-type(odd){
+	background-color: #000;
+}
+.board__row:nth-of-type(even) .board__column:nth-of-type(even){
+	background-color: #000;
+}
